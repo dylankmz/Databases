@@ -2,11 +2,15 @@ package be.jadv.model;
 
 public class User {
 
-    public long id;
-    public String username;
-
+    private long id;
+    private String username;
 
     public User() {
+    }
+
+    public User(long id, String username) {
+        this.id = id;
+        this.username = username;
     }
 
     public long getId() {
